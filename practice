@@ -1,0 +1,33 @@
+ //type userid and password
+    await page.waitForSelector("input[name='username']");
+    await page.click("input[name='username']", configJSO.userid, {delay: 30});
+    await page.waitForSelector("input[name='password']");
+    await page.click("input[name='password']", configJSO.password, {delay: 30});
+    //press click on page 3
+    await page.waitForSelector("button[data-analyitcs='LoginPassword']");
+    await page.click("button[data-analyitcs='LoginPassword']");
+    //click on compete
+    await page.waitForSelector("a[data-analyitcs='NavBarContests']");
+    await page.click("a[data-analyitcs='NavBarContests']");
+    //click on manage contests
+    await page.waitForSelector("a[href ='/administration/contests']");
+    await page.click("a[href ='/administration/contests']");
+
+    //click on first contest
+    //await page.waitForSelector();
+    //await page.click();
+
+    //await page.waitFor(3000);
+
+    //click on moderators tab
+    //await page.waitForSelector("li[data-tab='moderators']");
+    //await page.click("li[data-tab='moderators']");
+
+    //type in moderator
+    //await page.waitForSelector("input#moderator");
+    //await page.click("input#moderator", configJSO.moderator, {delay: 50});
+    
+    //await page.keyboard.press("Enter");
+
+    //await browser.close();
+   // console.log("Browser closed.");
